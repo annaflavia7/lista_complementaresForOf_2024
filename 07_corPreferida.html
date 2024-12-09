@@ -8,11 +8,27 @@
     */
 
     //Entrada
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    let gosta1 = [];
+    let nGosta = [];
+    let numGosta = 0;
+    let numNGosta = 0;
 
 
     //Processamento
-
+    for (let item of cores) {
+        let gosta = prompt(`Quais cores dessas você gosta? ${cores}, Responda com S-sim ou N-não`)
+        if (gosta == "S") {
+            gosta1.push(item);
+            numGosta++;
+        }
+        else {
+            nGosta.push(item);
+            numNGosta++;
+        }
+    }
 
     //Saída
+    alert(`Cores favoritas: ${gosta1} \n quantidade: ${numGosta} \nCores não favoritas: ${nGosta} \nquantidade: ${numNGosta}`);
 
 </script>

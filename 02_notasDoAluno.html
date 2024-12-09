@@ -7,10 +7,24 @@
     */
 
     //Entrada
-
+    let notaAluno = [7, 5, 9, 8];
+    let notaMaior = [];
+    let notaMenor = [];
 
     //Processamento
-
+    for(let nota of notaAluno){
+        if(nota > 8){
+            notaMaior.push(nota);
+        }
+        else if(nota < 6){
+            notamenor.push(nota)
+        }
+    }
+    let soma = notasAluno.reduce((acumulador, elemento) => acumulador + elemento, 0);
+    let media = soma / notasAluno.length;
+    alert(`A maior nota ` + notaMaior );
+    alert(`A menor nota ` + notaMenor );
+    alert(`Media ` + media);
 
     //Saída
 
